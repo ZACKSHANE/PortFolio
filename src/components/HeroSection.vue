@@ -55,9 +55,12 @@
 
         <!-- Button -->
         <div class="mt-6">
-          <a href="#" class="inline-block bg-blue-600 dark:bg-teal-400 hover:bg-blue-700 text-white px-6 py-3 rounded-lg transition">
-            Hire Me
-          </a>
+           <a
+              href="https://wa.me/6285811367820"
+              target="_blank"
+              class="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded shadow"
+              >Hire Me</a
+            >
         </div>
       </div>
 

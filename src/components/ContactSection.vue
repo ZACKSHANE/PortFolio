@@ -1,92 +1,76 @@
 <template>
-  <section id="contact" class="py-20 px-4 bg-cyan-700 dark:bg-gray-900">
+  <section id="contact" class="py-20 px-4 bg-[#F9F9F9]">
     <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12">
-      <!-- Experience - KIRI -->
-      <div class="md:w-1/2 text-white">
-        <h2 class="text-3xl font-bold mb-6 text-white">Experience</h2>
+      
+      <!-- Experience -->
+      <div class="md:w-1/2">
+        <h2 class="text-3xl font-bold text-[#00264D] mb-6">Experience</h2>
         <ul class="space-y-4">
-          <div class="bg-amber-500 dark:bg-red-700 p-4 rounded-lg shadow">
-          <li>
-            <h3 class="text-xl font-semibold text-dray-400">UI/UX Designer</h3>
-            <p class="text-gray-800">Freelance | 2025 - Sekarang</p>
-            <p class="text-gray-800 mt-2">Membuat wireframe, prototipe, dan desain antarmuka pengguna untuk berbagai proyek aplikasi mobile dan web.</p>
+          <li class="bg-white p-4 rounded-xl border border-[#A0C3D2] shadow">
+            <h3 class="text-xl font-semibold text-[#00264D]">UI/UX Designer</h3>
+            <p class="text-[#4F4F4F]">Freelance | 2022 - Sekarang</p>
+            <p class="text-[#4F4F4F] mt-2">
+              Membuat wireframe, prototipe, dan desain antarmuka pengguna untuk berbagai proyek aplikasi mobile dan web.
+            </p>
           </li>
-          </div>
-          <div class="bg-amber-500 p-4 rounded-lg shadow">
-          <li>
-            <h3 class="text-xl font-semibold text-dray-400 mb-3">Front-End Developer</h3>
-            <p class="text-gray-800">Freelance | 2025 - Sekarang</p>
-            <p class="text-gray-800 mt-2">Mengembangkan tampilan website menggunakan Vue.js dan Tailwind CSS dengan fokus pada responsive design.</p>
+          <li class="bg-white p-4 rounded-xl border border-[#A0C3D2] shadow">
+            <h3 class="text-xl font-semibold text-[#00264D]">Front-End Developer</h3>
+            <p class="text-[#4F4F4F]">Freelance | 2025 - Sekarang</p>
+            <p class="text-[#4F4F4F] mt-2">
+              Mengembangkan tampilan website menggunakan Vue.js dan Tailwind CSS dengan fokus pada responsive design.
+            </p>
           </li>
-          </div>
-          <div class="bg-amber-500 dark:bg-teal-400 p-4 rounded-lg shadow">
-          <li>
-            <h3 class="text-xl font-semibold text-dray-400 mb-3">Photoshop</h3>
-            <p class="text-gray-800">Freelance | 2020 - Sekarang</p>
-            <p class="text-gray-800 mt-2">Creative Photoshop design project showcasing advanced techniques..</p>
+          <li class="bg-white p-4 rounded-xl border border-[#A0C3D2] shadow">
+            <h3 class="text-xl font-semibold text-[#00264D]">Photoshop</h3>
+            <p class="text-[#4F4F4F]">Freelance | 2020 - Sekarang</p>
+            <p class="text-[#4F4F4F] mt-2">
+              Creative Photoshop design project showcasing advanced techniques.
+            </p>
           </li>
-          </div>
         </ul>
       </div>
 
-      <!-- Form Contact - KANAN -->
+      <!-- Form Contact -->
       <div class="md:w-1/2">
-        <h2 class="text-3xl font-bold text-white mb-6">Contact Me</h2>
-        <form @submit.prevent="handleSubmit" class="space-y-6 bg-gray-100 dark:bg-gray-800 p-6 rounded-lg shadow ">
+        <h2 class="text-3xl font-bold text-[#00264D] mb-6">Contact Me</h2>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="space-y-6 bg-white p-6 rounded-xl shadow border border-gray-200"
+        >
+          <!-- ✅ Web3Forms hidden inputs -->
+          <input type="hidden" name="access_key" value="1d65d22e-3c64-4f88-b93c-8a834d2e0bc6" />
+          <input type="hidden" name="subject" value="Pesan baru dari Website Portfolio" />
+          <input type="hidden" name="from_name" value="PortFolio Zacky" />
+          <input type="hidden" name="form" value="https://zackshane.github.io/PortFolio/" />
+          <input type="hidden" name="captcha" value="false" />
+
+          <!-- Input Fields -->
           <div>
-            <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
-            <input v-model="form.name" type="text" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 dark:text-white" />
+            <label class="block mb-1 text-sm font-medium text-gray-700">Nama</label>
+            <input name="name" type="text" required class="w-full px-4 py-2 border rounded-md" />
           </div>
           <div>
-            <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
-            <input v-model="form.email" type="email" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 dark:text-white" />
+            <label class="block mb-1 text-sm font-medium text-gray-700">Email</label>
+            <input name="email" type="email" required class="w-full px-4 py-2 border rounded-md" />
           </div>
           <div>
-            <label class="block mb-1 text-sm font-medium text-gray-700 dark:text-gray-300">Message</label>
-            <textarea v-model="form.message" required rows="4" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 dark:text-white"></textarea>
+            <label class="block mb-1 text-sm font-medium text-gray-700">Pesan</label>
+            <textarea name="message" rows="4" required class="w-full px-4 py-2 border rounded-md"></textarea>
           </div>
-          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded">
-            Send
+
+          <!-- Submit -->
+          <button type="submit"
+            class="bg-[#E75B1A] hover:bg-[#c24b13] text-white font-medium py-2 px-6 rounded transition duration-300">
+            Kirim
           </button>
         </form>
-        <p v-if="success" class="text-green-500 text-center mt-4">Message sent successfully!</p>
       </div>
     </div>
 
     <!-- Footer -->
-    <div class=" mt-16 text-center text-gray-200 dark:text-gray-400">
+    <div class="mt-16 text-center text-[#6c757d] text-sm">
       <p>&copy; 2025 ZAKI ALHAFIZH EFENDI. All rights reserved.</p>
     </div>
   </section>
 </template>
-
-<script setup>
-import { reactive, ref } from 'vue'
-
-const form = reactive({
-  name: '',
-  email: '',
-  message: '',
-})
-
-const success = ref(false)
-
-function handleSubmit() {
-  // Simulasi pengiriman (nanti bisa diganti dengan fetch/axios)
-  console.log('Form submitted:', form)
-  success.value = true
-
-  // Reset form
-  form.name = ''
-  form.email = ''
-  form.message = ''
-
-  // Sembunyikan notifikasi setelah 3 detik
-  setTimeout(() => {
-    success.value = false
-  }, 3000)
-}
-</script>
-
-<style scoped>
-</style>
