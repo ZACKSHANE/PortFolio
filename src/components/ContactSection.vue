@@ -8,7 +8,7 @@
         <ul class="space-y-4">
           <li class="bg-white p-4 rounded-xl border border-[#A0C3D2] shadow">
             <h3 class="text-xl font-semibold text-[#00264D]">UI/UX Designer</h3>
-            <p class="text-[#4F4F4F]">Freelance | 2022 - Sekarang</p>
+            <p class="text-[#4F4F4F]">Freelance | 2025 - Sekarang</p>
             <p class="text-[#4F4F4F] mt-2">
               Membuat wireframe, prototipe, dan desain antarmuka pengguna untuk berbagai proyek aplikasi mobile dan web.
             </p>
@@ -22,7 +22,7 @@
           </li>
           <li class="bg-white p-4 rounded-xl border border-[#A0C3D2] shadow">
             <h3 class="text-xl font-semibold text-[#00264D]">Photoshop</h3>
-            <p class="text-[#4F4F4F]">Freelance | 2020 - Sekarang</p>
+            <p class="text-[#4F4F4F]">Freelance | 2023 - Sekarang</p>
             <p class="text-[#4F4F4F] mt-2">
               Creative Photoshop design project showcasing advanced techniques.
             </p>
